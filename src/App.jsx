@@ -8,20 +8,15 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 import Experience from "@/components/sections/Experience";
 
-
- function App() {
+function App() {
   return (
-    
     <div className="bg-white text-black dark:bg-neutral-950 dark:text-white transition-colors duration-300">
-     
-
       <Navbar />
       <Hero />
       <About />
       <Experience />
-        <Certificates />
+      <Certificates />
       <Projects />
-    
       <Stack />
       <Contact />
       <Footer />

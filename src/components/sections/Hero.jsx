@@ -34,7 +34,7 @@ export default function Hero() {
           Contact
         </a>
         <a
-          href="/CV.pdf"
+          href="https://drive.google.com/file/d/1pyTDYjW1_jqJ4TjcOQm0yoS381SzC6su/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-2 rounded bg-purple-600 text-white font-medium shadow hover:bg-purple-700 transition"

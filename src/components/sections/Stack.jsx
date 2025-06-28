@@ -2,21 +2,22 @@ const frontend = [
   { name: "React", percent: 95 },
   { name: "TypeScript", percent: 90 },
   { name: "Tailwind CSS", percent: 88 },
-  { name: "Next.js", percent: 85 },
+  { name: "Angular", percent: 70 },
 ];
 
 const backend = [
   { name: "Node.js", percent: 90 },
-  { name: "EXpress.js", percent: 80 },
+  { name: "Express.js", percent: 80 },
   { name: "My SQL", percent: 85 },
   { name: "MongoDB", percent: 82 },
 ];
 
 const tools = [
-  { name: "Git", percent: 92 },
-  { name: "Data ", percent: 78 },
-  { name: "AWS", percent: 75 },
-  { name: "Figma", percent: 88 },
+  { name: "Git", percent: 80 },
+  { name: "GitHub ", percent: 92 },
+  { name: "Postman", percent: 95 },
+  { name: "Linux", percent: 60 },
+ 
 ];
 
 function SkillBar({ name, percent }) {

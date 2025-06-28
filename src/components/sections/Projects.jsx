@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Github } from "lucide-react"; // تأكد من تثبيت lucide-react
+import { ArrowLeft, ArrowRight, Github } from "lucide-react"; 
 
 const projects = [
   {
@@ -14,7 +14,7 @@ const projects = [
       "Created detailed API documentation using Swagger",
       
     ],
-    link: "https://github.com/yourusername/ecommerce-platform",
+   
     image:
       "https://th.bing.com/th/id/OIP.Ae9FqfJdVNE02qLB264kFwHaEK?rs=1&pid=ImgDetMain",
     tech: [
@@ -31,8 +31,8 @@ const projects = [
       "custom coupons without limit",
       "instructor dashboard",
     ],
-    frontend: "https://github.com/yourusername/ecommerce-frontend",
-    backend: "https://github.com/yourusername/ecommerce-backend",
+    frontend: "https://github.com/Eman-Qadry/cyper-study-frontend",
+    backend: "https://github.com/Eman-Qadry/cyper-study-backend",
   },
   {
     title: "Who Wants to Be a Millionaire– Quiz Game",
@@ -48,8 +48,7 @@ const projects = [
       "Score tracking and progression through increasing difficulty",
       "Responsive design with Bootstrap for a clean layout across devices",
     ],
-    frontend: "https://github.com/yourusername/task-frontend",
-    backend: "https://github.com/yourusername/task-backend",
+
   },
   {
     title: "Smart Farm System ",
@@ -65,30 +64,14 @@ const projects = [
       "View Weather Forecast",
       "Acess real time data ",
     ],
-    frontend: "https://github.com/yourusername/analytics-frontend",
-    backend: "https://github.com/yourusername/analytics-backend",
+    
   },
+
   {
-    title: "Online Courses Platform",
-    description:
-      "A structured backend API for managing online course content, designed to support both admin and user roles.",
-    link: "https://github.com/Eman-Qadry/courses_api",
-    image: "https://th.bing.com/th/id/OIP.qIOXrWlJjB2ymOVHL93MfAHaEw?rs=1&pid=ImgDetMain",
-    tech: [ "Node.js", "Express", "MongoDB","JWT (for admin only)"],
-    features: [
-      "Admin: Add/edit/delete courses, topics, videos, and playlists",
-      " User: View courses and browse content freely",
-      "Modular structure: Separate routes, controllers, and validations",
-      " Input validation & error handling",
-    ],
-    frontend: "https://github.com/yourusername/udemy-frontend",
-    backend: "https://github.com/yourusername/udemy-backend",
-  },
-  {
-    title: "Social Media App",
+    title: "Social Media Website",
     description:
       "A fully-featured social media platform that enables users to connect, share, and communicate seamlessly.",
-    link: "https://github.com/yourusername/social-app",
+   
     image: "https://th.bing.com/th/id/OIP.uuWAsYuz98ylupws-O8ZuwHaEK?rs=1&pid=ImgDetMain",
     tech: ["React", "Tailwind CSS", "EXpress.js","MongoDB","Socket.IO"],
     features: [
@@ -99,8 +82,8 @@ const projects = [
 	  "Send & accept friend requests",
      "Stories (24-hour disappearing content)",
     ],
-    frontend: "https://github.com/yourusername/social-frontend",
-    backend: "https://github.com/yourusername/social-backend",
+    frontend: "https://github.com/Eman-Qadry/social_website_frontEnd",
+    backend: "https://github.com/Eman-Qadry/Social_media",
   },
 ];
 

@@ -30,7 +30,7 @@ export default function Contact() {
             </span>
             <div>
               <div className="font-semibold text-gray-900 dark:text-white">Phone</div>
-              <div className="text-gray-600 dark:text-gray-300">+2 01202601660</div>
+              <div className="text-gray-600 dark:text-gray-300">+2 01202901660</div>
             </div>
           </div>
           <div className="flex items-center gap-4">

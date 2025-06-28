@@ -55,7 +55,7 @@ export default function Navbar() {
           <Menu size={22} />
         </button>
       </div>
-      {/* Mobile Drawer */}
+    
       {open && (
         <div
           className="md:hidden fixed inset-0 z-40 bg-black/40"

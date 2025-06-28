@@ -5,14 +5,14 @@ export default function Certificates() {
       issuer: "Information Technology Institute (ITI)",
       date: "2025",
       image: "https://tse4.mm.bing.net/th/id/OIP.E9sFlcJrnRVcWS3UMnmWNAHaD3?rs=1&pid=ImgDetMain", // ضع صورة الشهادة في public/images أو استخدم رابط خارجي
-      link: "#", // رابط الشهادة أو اتركه فارغ
+      link: "https://drive.google.com/file/d/1oH9p7hd0i-pD5Rw-xwSO4o8qo7_Zmrgz/view?usp=drive_link", 
     },
     {
       title: "Bachelor's Degree in Computer Science",
-      issuer: "Your University Name",
+      issuer: "Assuit University",
       date: "2024",
       image: "https://th.bing.com/th/id/R.872265f9a2b52ecadd8c39a539283819?rik=sgEza%2f2KlzBcLA&pid=ImgRaw&r=0",
-      link: "#",
+      link: "https://drive.google.com/file/d/1oCxarf8sLQU3XZVGrs1mANP10u4-53kz/view?usp=sharing",
     },
   ];
 
