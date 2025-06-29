@@ -1,6 +1,26 @@
-import { Mail, Phone, MapPin, Send } from "lucide-react"; 
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 
 export default function Contact() {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
+      .then(
+        () => setSent(true),
+        (error) => alert("Error: " + error.text)
+      );
+  };
+
   return (
     <section id="contact" className="py-24 px-4">
       <div className="max-w-4xl mx-auto text-center mb-12">
@@ -45,23 +65,27 @@ export default function Contact() {
         </div>
         {/* Contact Form */}
         <form
+          ref={form}
+          onSubmit={sendEmail}
           className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8 flex flex-col justify-center"
-          onSubmit={e => e.preventDefault()}
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Send a Message</h3>
           <input
+            name="name"  
             type="text"
             placeholder="Your Name"
             className="mb-4 px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 bg-transparent text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
             required
           />
           <input
+            name="email" 
             type="email"
             placeholder="Your Email"
             className="mb-4 px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 bg-transparent text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
             required
           />
           <textarea
+            name="message" 
             placeholder="Your Message"
             rows={4}
             className="mb-6 px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 bg-transparent text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-none"
@@ -74,6 +98,7 @@ export default function Contact() {
             <Send className="w-5 h-5" />
             Send Message
           </button>
+          {sent && <p className="text-green-600 mt-4">Message sent successfully!</p>}
         </form>
       </div>
     </section>

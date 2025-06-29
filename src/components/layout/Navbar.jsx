@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="w-full fixed top-0 z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur border-b border-gray-200 dark:border-neutral-800 shadow-sm">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
         <h1 className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-          Iman Qadry
+          Eman Qadry
         </h1>
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
