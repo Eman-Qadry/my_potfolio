@@ -1,23 +1,35 @@
-const frontend = [
-  { name: "React", percent: 95 },
-  { name: "TypeScript", percent: 90 },
-  { name: "Tailwind CSS", percent: 88 },
-  { name: "Angular", percent: 70 },
-];
-
 const backend = [
   { name: "Node.js", percent: 90 },
-  { name: "Express.js", percent: 80 },
-  { name: "My SQL", percent: 85 },
-  { name: "MongoDB", percent: 82 },
+  { name: "Express.js", percent: 85 },
+  { name: "MongoDB", percent: 85 },
+  { name: "My SQL", percent: 80 },
+  { name: "REST API", percent: 90 },
+];
+
+const coreCS = [
+  { name: "OOP", percent: 90 },
+  { name: "Data Structures & Algorithms", percent: 85 },
+  { name: "Design Patterns", percent: 75 },
+];
+
+const problemSolving = [
+  { name: "Solved 600+ algorithmic problems on Codeforces", percent: 100 },
 ];
 
 const tools = [
-  { name: "Git", percent: 80 },
-  { name: "GitHub ", percent: 92 },
+  { name: "VS Code", percent: 95 },
   { name: "Postman", percent: 95 },
-  { name: "Linux", percent: 60 },
- 
+  { name: "MongoDB Atlas", percent: 85 },
+  { name: "Vercel", percent: 80 },
+  { name: "Netlify", percent: 80 },
+];
+
+const frontend = [
+  { name: "React.js", percent: 95 },
+  { name: "Tailwind CSS", percent: 90 },
+  { name: "HTML5", percent: 95 },
+  { name: "CSS3", percent: 90 },
+  { name: "JavaScript", percent: 92 },
 ];
 
 function SkillBar({ name, percent }) {
@@ -54,22 +66,37 @@ export default function Stack() {
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
           I'm constantly learning and improving my skills to stay current with the latest technologies and best practices in web development.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Frontend</h3>
-            {frontend.map((skill) => (
-              <SkillBar key={skill.name} {...skill} />
-            ))}
-          </div>
-          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8">
+        <div className="grid md:grid-cols-3 gap-8 text-left">
+          {/* Backend */}
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Backend</h3>
             {backend.map((skill) => (
               <SkillBar key={skill.name} {...skill} />
             ))}
           </div>
-          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Tools & Others</h3>
+          {/* Frontend */}
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8 flex flex-col">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Frontend</h3>
+            {frontend.map((skill) => (
+              <SkillBar key={skill.name} {...skill} />
+            ))}
+          </div>
+          {/* Tools */}
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8 flex flex-col">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Tools & Platforms</h3>
             {tools.map((skill) => (
+              <SkillBar key={skill.name} {...skill} />
+            ))}
+          </div>
+        </div>
+        {/* Core CS + Problem Solving */}
+        <div className="grid md:grid-cols-1 gap-8 text-left mt-8 max-w-3xl mx-auto">
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-8 flex flex-col">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Core CS & Problem Solving</h3>
+            {coreCS.map((skill) => (
+              <SkillBar key={skill.name} {...skill} />
+            ))}
+            {problemSolving.map((skill) => (
               <SkillBar key={skill.name} {...skill} />
             ))}
           </div>

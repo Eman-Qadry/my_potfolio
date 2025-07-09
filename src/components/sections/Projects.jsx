@@ -17,6 +17,7 @@ const projects = [
    
     image:
       "https://th.bing.com/th/id/OIP.Ae9FqfJdVNE02qLB264kFwHaEK?rs=1&pid=ImgDetMain",
+    link: "https://github.com/cyperStudy-an-online-platform",
     tech: [
       "React",
       "Tailwind css",
@@ -31,8 +32,7 @@ const projects = [
       "custom coupons without limit",
       "instructor dashboard",
     ],
-    frontend: "https://github.com/Eman-Qadry/cyper-study-frontend",
-    backend: "https://github.com/Eman-Qadry/cyper-study-backend",
+    
   },
   {
     title: "Who Wants to Be a Millionaire– Quiz Game",
@@ -73,6 +73,7 @@ const projects = [
       "A fully-featured social media platform that enables users to connect, share, and communicate seamlessly.",
    
     image: "https://th.bing.com/th/id/OIP.uuWAsYuz98ylupws-O8ZuwHaEK?rs=1&pid=ImgDetMain",
+    link: "https://github.com/socialMedia-website",
     tech: ["React", "Tailwind CSS", "EXpress.js","MongoDB","Socket.IO"],
     features: [
       "Real-time chat",
@@ -82,8 +83,7 @@ const projects = [
 	  "Send & accept friend requests",
      "Stories (24-hour disappearing content)",
     ],
-    frontend: "https://github.com/Eman-Qadry/social_website_frontEnd",
-    backend: "https://github.com/Eman-Qadry/Social_media",
+
   },
 ];
 
@@ -269,7 +269,7 @@ export default function Projects() {
                   href={selected.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded bg-gray-700 text-white font-medium hover:bg-gray-900 transition"
+                  className="px-4 py-2 rounded bg-purple-500 text-white font-medium hover:bg-gray-900 transition"
                 >
                   Main Repo
                 </a>
